@@ -1,0 +1,27 @@
+.bg-image{
+     background-image: url('./assets/bg.jpg');
+     height: 200vh;
+     width: auto;
+}
+
+.stuck {
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.card {
+    width: 20rem !important;
+    margin: 20vh auto;
+    color: white;
+    border: none !important;
+    opacity: 0.7;
+}
+
+.card-body{
+    background: black;
+}
+
+.btn{
+    color: white !important;
+}
