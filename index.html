@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome changing to be me.</title>
+
+    <link rel="stylesheet" href="me.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+    <div class="stuck bg-image">
+        <div class="card">
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Insert your secret.</label>
+                        <input type="text" class="form-control" id="secretinput" aria-describedby="nope" disabled placeholder="Typing...">
+                        <small id="emailHelp" class="form-text text-muted">I'll give you some money.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="passwordinput" disabled placeholder="Password">
+                    </div>
+                    <button type="submit" class="btn ">Sure ?</button>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+
+<script>
+    var inputsecret = document.getElementById("secretinput").value = 'Typing...'
+    var inputpassword = document.getElementById("passwordinput").value = 'Password...' 
+    setInterval(function(){ 
+        document.getElementById("secretinput").value = document.getElementById("secretinput").value+'.'
+        document.getElementById("passwordinput").value = document.getElementById("passwordinput").value+'.'
+    }, 1500);
+</script>
+</html>
